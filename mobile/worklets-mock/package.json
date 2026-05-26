@@ -1,6 +1,5 @@
 {
   "name": "react-native-worklets",
   "version": "0.0.1",
-  "private": true,
-  "description": "Mock package providing worklets babel plugin for nativewind compatibility"
+  "private": true
 }
