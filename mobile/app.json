@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Tasbih Dhikr Digital",
+    "slug": "tasbih-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "tasbih",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#061a14"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tasbih.mobile",
+      "icon": "./assets/icon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#061a14"
+      },
+      "package": "com.tasbih.mobile"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

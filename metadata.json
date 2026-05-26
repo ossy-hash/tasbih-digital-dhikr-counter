@@ -1,0 +1,6 @@
+{
+  "name": "Tasbih Digital Dhikr Counter",
+  "description": "A highly polished, interactive Digital Dhikr and Tasbih counter featuring custom presets, history logging, audio feedback, theme customization, and keyboard shortcuts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

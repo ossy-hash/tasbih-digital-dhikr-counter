@@ -1,0 +1,5 @@
+The following packages should be updated for best compatibility with the installed expo version:
+  @react-native-async-storage/async-storage@2.1.2 - expected version: 1.23.1
+  expo-asset@11.1.7 - expected version: ~11.0.5
+  react-native@0.76.6 - expected version: 0.76.9
+Your project may not work correctly until you install the expected versions of the packages.
