@@ -11,3 +11,7 @@ web-build/
 .env
 .env.*
 !.env.example
+expo-build.txt
+expo-error.txt
+expo-output.txt
+expo-build-err.txt
