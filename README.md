@@ -1,20 +1,65 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Tasbih Digital Dhikr Counter
 
-# Run and deploy your AI Studio app
+A React Native mobile app for digital tasbih (dhikr) counting, built with Expo SDK 52.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/b08edc63-e0e9-4240-9a99-ec0ebaabc4c8
+- 5 built-in dhikr presets (Subhanallah, Alhamdulillah, Allahu Akbar, La ilaha illallah, Astaghfirullah)
+- Custom phrase creation with target goals
+- Tap-to-count counter with circular SVG progress ring
+- Per-phrase and total-cycle tracking
+- History log with timestamps
+- Undo / reset per session
+- 7 themes (Emerald, Obsidian, Sapphire, Amethyst Night, Desert Ember, Arctic Frost, Pearl Light)
+- Completion celebration banner
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Expo SDK 52** (managed workflow)
+- **React Native 0.76.9**
+- **NativeWind v4** (Tailwind CSS for RN)
+- **TypeScript**
+- **expo-router** (file-based navigation)
+- **react-native-svg** (circular progress)
+- **@react-native-async-storage/async-storage** (persistence)
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+cd mobile
+npm install
+npx expo start
+```
+
+Scan the QR code with **Expo Go** on your Android/iOS device.
+
+## Build APK
+
+```bash
+cd mobile
+eas build -p android --profile preview
+```
+
+## Project Structure
+
+```
+mobile/
+├── app/              # Expo Router screens
+│   ├── _layout.tsx   # Root layout (fonts, providers)
+│   └── index.tsx     # Main counter screen
+├── components/       # Reusable UI components
+│   ├── CounterDial.tsx
+│   ├── PhraseList.tsx
+│   ├── TargetSelector.tsx
+│   ├── HistoryLog.tsx
+│   ├── AddPhraseModal.tsx
+│   └── CompletionBanner.tsx
+├── constants/        # Presets and theme definitions
+│   ├── presets.ts
+│   └── themes.ts
+├── utils/            # Storage hook
+│   └── storage.ts
+├── assets/           # App icon
+├── scripts/          # Icon generation
+└── app.json          # Expo config
+```
